@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 128, 128);
+}
+
+header {
+    background-color: #07374a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1:hover {
+    font-size: 30px;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#sensor-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.sensor {
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sensor h2 {
+    font-size: 18px;
+}
+
+.sensor p {
+    font-size: 16px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Set the desired height of your footer */
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sensor p {
+    font-size: 16px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #sensor-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        position: fixed;
+        height: auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 4vw;
+    }
+  .sensor h2 {
+        font-size: 14.5px; /* Adjust font size for smaller screens */
+    }
+
+    .sensor p {
+        margin: 5px 0; /* Add margin for better spacing */
+        font-size: 14.5px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADMATE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HEADMATE</h1>
+    </header>
+    <div class="container">
+        <h2>Sensor Readings</h2>
+        <div id="sensor-values" class="sensor">
+            <div>
+                <h2><i class="fas fa-thermometer-half" style="color: rgb(0,128,128);"></i> Temperature</h2>
+                <p id="temperature">Loading...</p>
+            </div>
+            <div>
+                <h2><i class="fas fa-tint" style="color: rgb(0,128,128);"></i> Humidity</h2>
+                <p id="humidity">Loading...</p>
+            </div>
+            <div>
+                <h2><i class="fas fa-fire" style="color: rgb(0,128,128);"></i> Gas</h2>
+                <p id="mq2">Loading...</p>
+            </div>
+            <div>
+                <h2><i class="fas fa-smog" style="color: rgb(0,128,128);"></i> Alcohol</h2>
+                <p id="mq3">Loading...</p>
+            </div>
+            <div>
+                <h2><i class="fas fa-gas-pump" style="color: rgb(0,128,128);"></i> CO</h2>
+                <p id="mq7">Loading...</p>
+            </div>
+            <div>
+                <h2><i class="fas fa-exclamation-triangle" style="color: rgb(0,128,128);"></i> Emergency</h2>
+                <p id="emergency">Loading...</p>
+            </div>
+            <!-- New section for Attendance -->
+            <div>
+                <h2><i class="fas fa-user" style="color: rgb(0,128,128);"></i> Attendance</h2>
+                <p id="attendance">Loading...</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <footer>
+        <p>&copy; 2023 Coal Miners Group LTD. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:coalminershelmet@gmail.com">coalminershelmet@gmail.com</a></p>
+    </footer>
+</body>
+</html>
